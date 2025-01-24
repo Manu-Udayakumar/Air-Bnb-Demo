@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda Boutique Farmstay - Chatbot</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F5DC; /* Warm Beige background */
+            color: #2F4F4F; /* Charcoal Grey text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #826F66; /* Vintage Taupe primary color */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #8B6F61; /* Vintage Mauve for subtitle */
+            margin-bottom: 40px;
+        }
+
+        .chatbot-container {
+            background-color: #FFFFFF; /* White background for chatbot area */
+            border: 2px solid #826F66; /* Vintage Taupe border for the chatbot */
+            border-radius: 12px;
+            width: 350px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .chatbot-container::before {
+            content: "💬";
+            font-size: 3rem;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #826F66; /* Vintage Taupe */
+        }
+
+        .chatbot-container p {
+            color: #2F4F4F; /* Charcoal Grey for the chatbot description */
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #8B6F61;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Ananda Boutique Farmstay</h1>
+    <p>Your serene getaway awaits. Let me assist you with your stay.</p>
+
+    <div class="chatbot-container">
+        <p>Click below to chat with our virtual assistant for any help you need!</p>
+        <script type="text/javascript">
+          (function(d, t) {
+              var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+              v.onload = function() {
+                window.voiceflow.chat.load({
+                  verify: { projectID: '679397ce70f1b9c43e4269a7' },
+                  url: 'https://general-runtime.voiceflow.com',
+                  versionID: 'production'
+                });
+              }
+              v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+          })(document, 'script');
+        </script>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Ananda Boutique Farmstay. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
